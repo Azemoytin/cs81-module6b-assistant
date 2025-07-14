@@ -3,7 +3,6 @@ function PersonalAssistant(name) {
   this.name = name;
   this.tasks = [];
   this.mood = "neutral";
-}
 
   this.addTask = function(task) {
     this.tasks.push(task);
@@ -25,17 +24,17 @@ function PersonalAssistant(name) {
 }
 
 const myAssistant = new PersonalAssistant("Riley");
-  
-  console.log(`Hi, I'm your personal assistant ${myAssistant.name}.`);
-  
-  myAssistant.reportMood();
-  
-  myAssistant.addTask("Study computer science");
-  myAssistant.addTask("Watch YouTube");
-  myAssistant.addTask("Play games with friends");
-  
-  myAssistant.completeTask();
-  myAssistant.completeTask();
-  
-  myAssistant.mood = "productive";
-  myAssistant.reportMood();
+
+console.log(`Hi, I'm your personal assistant ${myAssistant.name}.`);
+
+myAssistant.reportMood();
+
+myAssistant.addTask("Study computer science");
+myAssistant.addTask("Watch YouTube");
+myAssistant.addTask("Play games with friends");
+
+myAssistant.completeTask();
+myAssistant.completeTask();
+
+myAssistant.mood = "productive";
+myAssistant.reportMood();
