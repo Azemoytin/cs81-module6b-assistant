@@ -23,3 +23,19 @@ function PersonalAssistant(name) {
     console.log(`${this.name}'s current mood is: ${this.mood}`);
   };
 }
+
+const myAssistant = new PersonalAssistant("Riley");
+  
+  console.log(`Hi, I'm your personal assistant ${myAssistant.name}.`);
+  
+  myAssistant.reportMood();
+  
+  myAssistant.addTask("Study computer science");
+  myAssistant.addTask("Watch YouTube");
+  myAssistant.addTask("Play games with friends");
+  
+  myAssistant.completeTask();
+  myAssistant.completeTask();
+  
+  myAssistant.mood = "productive";
+  myAssistant.reportMood();
